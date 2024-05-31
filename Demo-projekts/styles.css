@@ -81,12 +81,13 @@ section {
 }
 
 .heading-section {
-    min-height: 100vh;
-    grid-template-rows: 40vh 60vh;
+    /* min-height: 100vh; */
+    grid-template-rows: 1fr 1fr;
 }
 
 .top-container {
     grid-column: span 13;
+    height: 40vh;
 }
 
 img {
@@ -122,6 +123,7 @@ img {
 .heading-section .spalte-links {
     grid-column: 3 / span 5;
     padding-top: 32px;
+    grid-row: 1 / 3;
 }
 
 .heading-section .spalte-rechts {
