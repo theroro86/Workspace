@@ -167,6 +167,7 @@ button {
 
 .album-cover {
     padding: 15px;
+    aspect-ratio: 1:1;
 }
 
 .tourdates-section {
