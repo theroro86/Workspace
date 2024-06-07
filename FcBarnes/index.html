@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barnes
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">Barnes FC </div>
+        <nav class="nav-links">
+            <a href="#fakten">Fakten</a>
+            <a href="#aktuelles">Aktuelles</a>
+            <a href="#geschichte">Geschichte</a>
+        </nav>
+        <div class="burger-menu"><img class="burger" src="/FcBarnes/Bilder/Burger_Menu.svg" alt=""></div>
+    </header>
+
+    <img class="logobadge" src="/FcBarnes/Bilder/Logo_FcBarnes.svg" alt="">
+    <section id="fakten" class="fakten-container">
+        <div class="fakten-ueberschrift"><h2>Fakten</h2></div>
+            <div class="fakten-inhalt">
+                <div class="fakten-spalte"><h4>Ort</h4><h3>Barnes, London</h3></div>
+                <hr>
+                <div class="fakten-spalte"><h4>Gründungsjahr</h4><h3>1862</h3></div>
+                <hr>
+                <div class="fakten-spalte"><h4>Vereinsfarben</h4><h3>Blau-Weiss</h3></div>
+                <hr>
+                <div class="fakten-spalte"><h4>Stadion</h4><h3>Barnes Green</h3></div>  
+            </div>
+        </div>          
+    </section>
+
+    <section id="aktuelles" class="aktuelles-container">
+        <div class="aktuelles-ueberschrift"><h2>Aktuelles</h2></div>
+            <div class="aktuelles-inhalt">
+                <h4>2022/23</h4>
+                <p>In der Saison 2022/23 trat der Barnes FC nach insgesamt 32 Jahren wieder in einem organisierten Ligabetrieb an und belegte in der Intermediate Division 2 der Surrey South East Combination League den siebten Platz (von insgesamt zwölf Teams).</p>
+                <hr>
+                <h4>2021</h4>
+                <p>Im Juni 2021 belebten mit Janice Kilsby und Julie Burgess zwei Enkel des Ex-Präsidenten Leslie Kilsby gemeinsam mit weiteren einheimischen Unterstützern den Barnes FC neu.</p>
+                <div class="mehr"><h5>mehr</h5> <img class="dropdown" src="/FcBarnes/Bilder/Dropdown.svg" alt=""></div>
+            </div>
+    </section>
+
+    <section id="geschichte" class="geschichte-container">
+        <div class="geschichte-ueberschrift"><h2>Geschichte</h2></div>
+            <div class="geschichte-inhalt">
+            <h4>Vereinsgeschichte</h4>
+            <h6>Geschichte des historischen Barnes FC</h6>
+            <p>Der Barnes Football Club wurde im Jahr 1862 von Ebenezer Cobb Morley gegründet und gilt als sechstältester Fußballverein in England. Morley wurde im Jahr darauf der erste Verbandssekretär der englischen Football Association und die frühe Verbindung des Barnes FC mit dem nationalen Fußballverband wurde auch dadurch deutlich, dass mit Robert Willis (1866–1867) und Robert Graham (1867–1870) zwei weitere Barnes-Mitglieder Morley bei der FA nachfolgten.</p>
+            <div class="mehr"><h5>mehr</h5> <img class="dropdown" src="/FcBarnes/Bilder/Dropdown.svg" alt=""></div>
+            <hr>
+            <h4>Neuauflagen eines Barnes Football Clubs</h4>
+            <h6>Entwicklungen vor und nach dem Zweiten Weltkrieg</h6>
+            <p>Erst im Jahr 1926 machte ein in Barnes heimischer Klub wieder auf sich aufmerksam, als Leslie Kilsby und Robert Sears den Verein unter dem Namen „Barnes Albion“ erneut ins Leben riefen. In der neu geschaffenen Barnes & District League gewann Barnes Albion in den Jahren 1928/29, 1929/30 und 1930/31 die Meisterschaft sowie 1932 den Barnes Challenge Cup.</p>
+            <div class="mehr"><h5>mehr</h5> <img class="dropdown" src="/FcBarnes/Bilder/Dropdown.svg" alt=""></div>
+        </div>
+    </section>
+
+<footer>
+    <h4>footer</h4>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.querySelector('.burger-menu').addEventListener('click', function() {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.style.display === 'flex') {
+            navLinks.style.display = 'none';
+        } else {
+            navLinks.style.display = 'flex';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.backgroundColor = '#333';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '50px';
+            navLinks.style.right = '20px';
+            navLinks.style.width = '200px';
+        }
+    });
+</script>
