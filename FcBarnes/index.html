@@ -19,15 +19,17 @@
     <header class="header">
         <div class="logo">Barnes FC </div>
         <nav class="nav-links">
-            <a href="#fakten">Fakten</a>
-            <a href="#aktuelles">Aktuelles</a>
-            <a href="#geschichte">Geschichte</a>
+            <a href="#fakten">Fakten</a  tabindex="1">
+            <a href="#aktuelles">Aktuelles</a tabindex="2">
+            <a href="#geschichte">Geschichte</a tabindex="3">
         </nav>
         <div class="burger-menu"><img class="burger" src="/FcBarnes/Bilder/Burger_Menu.svg" alt=""></div>
     </header>
-
-    <img class="logobadge" src="/FcBarnes/Bilder/Logo_FcBarnes.svg" alt="">
-    <section id="fakten" class="fakten-container">
+    <section class="logobadge-container">
+        <img class="logobadge" src="/FcBarnes/Bilder/Logo_FcBarnes.svg" alt="Logo Barnes FC"  tabindex="4">
+    </section>
+    
+    <section id="fakten" class="fakten-container" tabindex="5">
         <div class="fakten-ueberschrift"><h2>Fakten</h2></div>
             <div class="fakten-inhalt">
                 <div class="fakten-spalte"><h4>Ort</h4><h3>Barnes, London</h3></div>
@@ -41,7 +43,7 @@
         </div>          
     </section>
 
-    <section id="aktuelles" class="aktuelles-container">
+    <section id="aktuelles" class="aktuelles-container" tabindex="6">
         <div class="aktuelles-ueberschrift"><h2>Aktuelles</h2></div>
             <div class="aktuelles-inhalt">
                 <h4>2022/23</h4>
@@ -53,7 +55,7 @@
             </div>
     </section>
 
-    <section id="geschichte" class="geschichte-container">
+    <section id="geschichte" class="geschichte-container" tabindex="7">
         <div class="geschichte-ueberschrift"><h2>Geschichte</h2></div>
             <div class="geschichte-inhalt">
             <h4>Vereinsgeschichte</h4>
@@ -68,7 +70,7 @@
         </div>
     </section>
 
-<footer>
+<footer tabindex="8">
     <h4>footer</h4>
     </footer>
 </body>

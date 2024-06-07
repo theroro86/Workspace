@@ -1,3 +1,10 @@
+*:focus {
+    outline: 3px solid  #ff0026;
+    outline-offset: 5px;
+    outline-style: solid;
+    border-radius: 4px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -102,6 +109,12 @@ h6 {
 .burger {
     width: 100%;
     height: auto;
+    transition: 0.3s;
+}
+
+.burger:hover {
+    overflow: #0000FF;
+    transform: scale(1.1);
 }
 
 .logobadge {
@@ -111,6 +124,11 @@ h6 {
     align-self: center;
     max-width: 400px;
     height: auto;
+    transition: 0.3s;
+}
+
+.logobadge:hover {
+    transform: scale(1.1);
 }
 
 .dropdown {
@@ -130,9 +148,8 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 4px;
-    justify-content: right
+    justify-content: right;
 }
-
 
 footer {
     background-color: #0000FF;
@@ -144,6 +161,13 @@ footer {
     color: #FFFFFF;
 }
 
+.logobadge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+}
 
 .fakten-container {
     display: flex;
@@ -155,7 +179,7 @@ footer {
 }
 
 .fakten-ueberschrift {
-   height: 74px;
+   min-height: 74px;
    padding-left: 24px;
    width: 100%;
    background-color: #0000FF;
@@ -193,7 +217,7 @@ footer {
 }
 
 .aktuelles-ueberschrift {
-    height: 74px;
+    min-height: 74px;
     padding-left: 24px;
     width: 100%;
     background-color: #181818;
@@ -224,7 +248,7 @@ footer {
 }
 
 .geschichte-ueberschrift {
-    height: 74px;
+    min-height: 74px;
     padding-left: 24px;
     width: 100%;
     background-color: #0000FF;
@@ -245,6 +269,10 @@ footer {
     border-radius: 0 0 32px 32px;
  }
 
+ html {
+    scroll-behavior: smooth;
+}
+
  /* Header-Menu*/
 .header {
     display: flex;
@@ -254,6 +282,12 @@ footer {
     padding: 10px 32px;
     color: #181818;
     background-color: #FAFAFA;
+}
+
+.header .nav-links a:hover {
+    color: #0000FF;
+    transition: 0.3s;
+    text-decoration: underline ;
 }
 
 a {
@@ -283,7 +317,8 @@ a {
     font-weight: regular;
     cursor: pointer;}
 
-@media (min-width: 800px) {
+
+@media (min-width: 900px) {
     .nav-links {
         display: flex;
     }
@@ -298,4 +333,52 @@ a {
         color: #181818;
         background-color: #FAFAFA;
     }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    h2 {
+        font-size: 56px;
+        line-height: 42px;
+    }
+    h3 {
+        font-size: 36px;
+        line-height: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 18px;
+    }
+    h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .fakten-container {
+        max-width: 700px;
+    }
+    .geschichte-container {
+        max-width: 700px;
+    }
+    .aktuelles-container {
+        max-width: 700px;
+    }
 }
+
+@media (min-width: 600px) {
+    .fakten-container {
+        max-width: 433px;
+    }
+    .geschichte-container {
+        max-width: 700px;
+    }
+    .aktuelles-container {
+        max-width: 433px;
+    }
+}
+
