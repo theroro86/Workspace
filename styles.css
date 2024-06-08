@@ -33,4 +33,9 @@ a {
     letter-spacing: 2%;
     line-height: 40px;
     color: #0000FF;
+    text-decoration: none;<
+}
+
+a:hover {
+    text-decoration: underline;
 }
