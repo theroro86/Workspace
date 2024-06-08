@@ -201,10 +201,9 @@ footer {
     }
 
 .fakten-spalte {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .aktuelles-container {
@@ -238,7 +237,7 @@ footer {
     border-radius: 0 0 32px 32px;
  }
 
- .geschichte-container {
+.geschichte-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,26 +358,48 @@ a {
         font-size: 14px;
         line-height: 20px;
     }
-    .fakten-container {
-        max-width: 700px;
-    }
-    .geschichte-container {
-        max-width: 700px;
-    }
-    .aktuelles-container {
-        max-width: 700px;
+    @media (min-width: 900px) {
+        .fakten-container {
+            max-width: 700px;
+            margin-left: auto;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .geschichte-container {
+            max-width: 700px;
+            margin-left: auto;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .aktuelles-container {
+            max-width: 700px;
+            margin-left: auto;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
     }
 }
 
 @media (min-width: 600px) {
     .fakten-container {
+        margin-right: 0;
         max-width: 433px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
-    .geschichte-container {
-        max-width: 700px;
-    }
+
     .aktuelles-container {
         max-width: 433px;
+        margin-left: auto;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }    
+    .geschichte-container {
+        max-width: 840px;
+        align-items: flex-start;
+        align-items: flex-start;
+        
     }
+
 }
 
