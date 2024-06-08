@@ -5,17 +5,17 @@
 
 @font-face {
     font-family: Monument Extended;
-    src: url(/Demo-projekts/Monument\ Extended/PPMonumentExtended-Bold.otf);
+    src: url(./Monument\ Extended/PPMonumentExtended-Bold.otf);
 }
 
 @font-face {
     font-family: Monument Extended Regular;
-    src: url(/Demo-projekts/Monument\ Extended/PPMonumentExtended-Regular.otf);
+    src: url(./Monument\ Extended/PPMonumentExtended-Regular.otf);
 }
 
 @font-face {
     font-family: Mori;
-    src: url(/Demo-projekts/Mori/PPMori-Regular.otf);
+    src: url(./Mori/PPMori-Regular.otf);
 }
 
 ul {
