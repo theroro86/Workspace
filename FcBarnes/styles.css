@@ -15,6 +15,7 @@ body {
         #FAFAFA 50%,
         #FAFAFA 100%
     );
+    background-attachment: fixed;
     background-size: 200% 100%;
 }
 
@@ -293,6 +294,8 @@ footer {
 a {
     text-decoration: none;
     color: #181818;
+    padding: 10px;
+    background-color: #FAFAFA;
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -370,7 +373,6 @@ a {
         margin-left: auto;
         align-items: flex-end;
         justify-content: flex-end;
-
     }
     .aktuelles-container {
         width: 50%;
@@ -402,7 +404,7 @@ a {
     h6 {
         font-size: 14px;
         line-height: 20px;
-    }        
+    }
     
 }
 
